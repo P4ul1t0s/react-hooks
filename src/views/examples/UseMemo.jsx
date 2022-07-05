@@ -1,5 +1,6 @@
 import React, { useMemo, useState } from 'react'
 import PageTitle from '../../components/layout/PageTitle'
+import SectionTitle from '../../components/layout/SectionTitle'
 
 function sum(a, b, t){
     const future = Date.now() + t * 1000
@@ -19,6 +20,7 @@ const UseMemo = (props) => {
                 title="Hook UseMemo"
                 subtitle="Retorna um valor memoizado!"
             />
+            <SectionTitle title="Exercício"/>
             <div className="center">
                 <input className="input" type="number" value={n1} onChange={e => setN1(parseInt(e.target.value))}/>
                 <input className="input" type="number" value={n2} onChange={e => setN2(parseInt(e.target.value))}/>
